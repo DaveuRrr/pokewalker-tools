@@ -122,6 +122,7 @@ __INFO__ = """Usage: merge_routes_to_bin.py <input_dir> <output.bin> <output_map
 
 Example:
     .venv/bin/python3.12 colour-sprites/merge_routes_to_bin.py images/color_routes images/output/color_routes.bin images/output/picowalker_rp2xxx_color_routes.h
+    .venv/bin/python3.12 colour-sprites/merge_routes_to_bin.py images/color_routes_v2 images/output/color_routes.bin images/output/picowalker_rp2350_color_routes.h
 """
 
 # =============================================================================
@@ -151,8 +152,8 @@ if __name__ == '__main__':
             if _index.__len__() < 2:
                 raise ValueError(f"Invalid filename format: {png_file.name}")
 
-            # Extract index from filename (expecting format like "0_route_name.png")
-            index:int = int(_index[1])
+            # Extract index from filename (expecting format like "route_0_route_name.png")
+            index:int = int(_index[2])
 
             if index < 0 or index > 7:
                 raise ValueError(f"Route index must be 0-7: {index}")

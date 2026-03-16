@@ -71,6 +71,8 @@ SPRITES = [
     (0x05F8, 8, 16, 1, "menu_arrow_return"),
 
     # Status & Communication
+    (0x0638, 8, 8, 1, "more_messages_or"),
+    (0x0648, 8, 4, 1, "more_messages_and"),
     (0x0660, 8, 8, 1, "low_battery"),
     (0x0670, 24, 16, 1, "talk_face_exclaim"),
     (0x06D0, 24, 16, 1, "talk_face_heart"),

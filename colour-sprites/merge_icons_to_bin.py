@@ -127,7 +127,8 @@ def write_map_header(address_map:List[Dict], output_file:Path, bin_size:int):
 __INFO__ = """Usage: merge_icons_to_bin.py <input_dir> <output.bin> <output_map.h>
 
 Example:
-    .venv/bin/python3.12 colour-sprites/merge_icons_to_bin.py images/color_icons images/output/color_icons.bin images/output/picowalker_rp2xxx_color_icons.h
+    .venv/bin/python3.12 colour-sprites/merge_icons_to_bin.py images/color_icons images/output/color_icons.bin images/output/picowalker_rp2350_color_icons.h
+    .venv/bin/python3.12 colour-sprites/merge_icons_to_bin.py images/color_icons_v2 images/output/color_icons.bin images/output/picowalker_rp2350_color_icons.h
 """
 
 if __name__ == '__main__':
